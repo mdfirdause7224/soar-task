@@ -57,8 +57,8 @@ function App() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="w-12 h-12 bg-gray-300 shadow-xl border-0" />
-            <CarouselNext className="w-12 h-12 bg-gray-300 shadow-xl border-0" />
+            <CarouselPrevious className="disabled:hidden w-12 h-12 bg-gray-300 shadow-xl border-0" />
+            <CarouselNext className="disabled:hidden w-12 h-12 bg-gray-300 shadow-xl border-0" />
           </Carousel>
         </div>
         <div className="flex gap-4 justify-between pt-4">
