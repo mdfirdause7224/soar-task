@@ -47,19 +47,32 @@ function App() {
           />
         </div>
       </div>
-      <div className="bg-white/85 p-4 border-2 border-solid rounded-xl w-96 ml-20">
-        <div>
+      <div className="bg-white/85 p-4 border-2 border-solid rounded-3xl w-[600px] ml-20">
+        <div className="ml-10 mr-10">
           <Carousel>
             <CarouselContent>
               {users.map((user, index) => (
-                <CarouselItem key={index} className="basis-1/2">
+                <CarouselItem key={index} className="basis-1/3 ml-2">
                   <Transfer name={user.name} title={user.title} img={user.img} />
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="w-12 h-12 bg-gray-300 shadow-xl border-0" />
+            <CarouselNext className="w-12 h-12 bg-gray-300 shadow-xl border-0" />
           </Carousel>
+        </div>
+        <div className="flex gap-4 justify-between pt-4">
+          <p className="text-left p-5">Write Amount</p>
+          <div className="flex flex-1 rounded-full bg-white border-0">
+            <input placeholder="534.50" className="flex-1 outline-none rounded-full p-5" />
+            <button
+              type="button"
+              className="bg-gray-500 px-10 text-lg font-semibold p-5 rounded-full flex gap-4 text-white"
+            >
+              Send
+              <img className="w-6 h-6" src="sender.png" alt="" />
+            </button>
+          </div>
         </div>
       </div>
     </>
