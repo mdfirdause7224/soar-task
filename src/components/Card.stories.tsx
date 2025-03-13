@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react';
 
-import Card from './Card'
+import Card from './Card';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -21,19 +21,19 @@ const meta = {
     name: 'Yasir',
     variant: 'dark'
   }
-} satisfies Meta<typeof Card>
+} satisfies Meta<typeof Card>;
 
-export default meta
-type Story = StoryObj<typeof meta>
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 export const Dark: Story = {
   args: {
     variant: 'dark'
   }
-}
+};
 
 export const Light: Story = {
   args: {
     variant: 'light'
   }
-}
+};

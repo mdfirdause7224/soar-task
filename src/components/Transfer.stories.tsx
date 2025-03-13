@@ -1,5 +1,5 @@
-import { Meta, StoryFn } from '@storybook/react'
-import Transfer from '../components/Transfer'
+import { Meta, StoryFn } from '@storybook/react';
+import Transfer from '../components/Transfer';
 
 export default {
   title: 'Components/Transfer',
@@ -9,20 +9,20 @@ export default {
     title: { control: 'text' },
     img: { control: 'text' }
   }
-} as Meta
+} as Meta;
 
-const Template: StoryFn = (args) => <Transfer name={''} title={''} img={''} {...args} />
+const Template: StoryFn = (args) => <Transfer name={''} title={''} img={''} {...args} />;
 
-export const Default = Template.bind({})
+export const Default = Template.bind({});
 Default.args = {
   name: 'John Doe',
   title: 'Software Engineer',
   img: 'https://avatar.iran.liara.run/public?'
-}
+};
 
-export const CustomUser = Template.bind({})
+export const CustomUser = Template.bind({});
 CustomUser.args = {
   name: 'Jane Smith',
   title: 'Product Manager',
   img: 'https://avatar.iran.liara.run/public?1'
-}
+};

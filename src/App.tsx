@@ -1,14 +1,14 @@
-import './App.css'
-import Card from './components/Card'
-import SideBar from './components/SideBar'
-import Transfer from './components/Transfer'
+import './App.css';
+import Card from './components/Card';
+import SideBar from './components/SideBar';
+import Transfer from './components/Transfer';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious
-} from './components/ui/carousel'
+} from './components/ui/carousel';
 
 const users = [
   { title: 'Director', name: 'Yasir', img: 'https://avatar.iran.liara.run/public?' },
@@ -18,7 +18,7 @@ const users = [
   { title: 'Designer', name: 'Rahman', img: 'https://avatar.iran.liara.run/public?4' },
   { title: 'CEO', name: 'Arafath', img: 'https://avatar.iran.liara.run/public?5' },
   { title: 'Director', name: 'Yasir', img: 'https://avatar.iran.liara.run/public?6' }
-]
+];
 
 function App() {
   return (
@@ -80,7 +80,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

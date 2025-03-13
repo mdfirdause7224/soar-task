@@ -50,7 +50,7 @@
 // export default SideBar
 
 function SideBar() {
-  return <div></div>
+  return <div></div>;
 }
 
-export default SideBar
+export default SideBar;

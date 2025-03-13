@@ -1,6 +1,6 @@
 interface LabelValueProps {
-  label: string
-  value: React.ReactNode
+  label: string;
+  value: React.ReactNode;
 }
 
 function LabelValue(props: LabelValueProps) {
@@ -9,24 +9,24 @@ function LabelValue(props: LabelValueProps) {
       <label className="text-xs leading-none whitespace-nowrap opacity-50">{props.label}</label>
       <h4 className="font-bold text-lg leading-none whitespace-nowrap">{props.value}</h4>
     </div>
-  )
+  );
 }
 
 interface CardProps {
-  balance: string
-  name: string
-  expiry: string
-  cardNumber: string
-  variant?: string
+  balance: string;
+  name: string;
+  expiry: string;
+  cardNumber: string;
+  variant?: string;
 }
 
 function Card(props: CardProps) {
-  const { balance, cardNumber, expiry, name, variant = 'dark' } = props
-  const isDark = variant === 'dark'
+  const { balance, cardNumber, expiry, name, variant = 'dark' } = props;
+  const isDark = variant === 'dark';
   const DarkTheme = {
     container: 'bg-gradient-to-r from-gray-600 to-black text-white',
     footer: 'bg-gradient-to-r from-white/10 to-white/0'
-  }
+  };
   return (
     <div
       id="card-box"
@@ -71,7 +71,7 @@ function Card(props: CardProps) {
         </span>
       </footer>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

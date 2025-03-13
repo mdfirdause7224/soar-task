@@ -1,10 +1,10 @@
 interface TransferProps {
-  name: string
-  title: string
-  img: string
+  name: string;
+  title: string;
+  img: string;
 }
 function Transfer(props: TransferProps) {
-  const { img = '' } = props
+  const { img = '' } = props;
   return (
     <>
       <div id="Transfer=parent" className="flex font-light pr-8">
@@ -22,7 +22,7 @@ function Transfer(props: TransferProps) {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Transfer
+export default Transfer;
