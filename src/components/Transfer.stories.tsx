@@ -17,12 +17,12 @@ export const Default = Template.bind({})
 Default.args = {
   name: 'John Doe',
   title: 'Software Engineer',
-  img: 'https://via.placeholder.com/80'
+  img: 'https://avatar.iran.liara.run/public?'
 }
 
 export const CustomUser = Template.bind({})
 CustomUser.args = {
   name: 'Jane Smith',
   title: 'Product Manager',
-  img: 'https://via.placeholder.com/80'
+  img: 'https://avatar.iran.liara.run/public?1'
 }
