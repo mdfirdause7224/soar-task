@@ -1,5 +1,6 @@
 import './App.css'
 import Card from './components/Card'
+import SideBar from './components/SideBar'
 import Transfer from './components/Transfer'
 import {
   Carousel,
@@ -23,6 +24,9 @@ function App() {
   return (
     <>
       <div>
+        <div>
+          <SideBar />
+        </div>
         <div className="flex">
           <Card
             balance="&#36;5,757"
