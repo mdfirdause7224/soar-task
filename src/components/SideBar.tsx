@@ -2,7 +2,7 @@ function SideBar() {
   return (
     <>
       <div className="bg-white w-[250px] h-[700px] py-3">
-        <div className="flex p-4 px-8 gap-2 font-extrabold text-2xl text-blue-900 hover:text-black font-semibold">
+        <div className="flex p-4 px-8 gap-2 font-extrabold text-2xl text-blue-900 hover:text-black hover:font-semibold">
           <img src="./downloads.svg" alt="opacity-60" />
           Soar Task
         </div>
