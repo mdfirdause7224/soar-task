@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import BalanceHistory from './components/BalanceHistory';
 import Card from './components/Card';
+import RecentTransactions from './components/RecentTransactions';
 import Sidebar from './components/SideBar';
 import Accounts from './components/SidebarItems/Accounts';
 import CreditCards from './components/SidebarItems/CreditCards';
@@ -12,9 +14,6 @@ import Services from './components/SidebarItems/Services';
 import Setting from './components/SidebarItems/Setting';
 import Transactions from './components/SidebarItems/Transactions';
 import Transfer from './components/Transfer';
-import WeeklyActivity from './components/WeeklyActivity';
-
-import BalanceHistory from './components/BalanceHistory';
 import {
   Carousel,
   CarouselContent,
@@ -22,6 +21,7 @@ import {
   CarouselNext,
   CarouselPrevious
 } from './components/ui/carousel';
+import WeeklyActivity from './components/WeeklyActivity';
 
 const users = [
   { title: 'Director', name: 'Yasir', img: 'https://avatar.iran.liara.run/public?' },
@@ -36,8 +36,22 @@ const users = [
 function App() {
   return (
     <>
-      <div>
+      <div className="flex gap-10">
         <WeeklyActivity />
+        <div>
+          <RecentTransactions
+            date={'28 january 2022'}
+            message={'Deposit from Card'}
+            amount={3463}
+          />
+          <RecentTransactions
+            transaction
+            image="https://avatar.iran.liara.run/public?5"
+            date={'29 january 2022'}
+            message={'Credited from Card'}
+            amount={3234}
+          />
+        </div>
       </div>
       <div>
         <div className="flex">
