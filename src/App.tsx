@@ -1,7 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Card from './components/Card';
-import SideBar from './components/SideBar';
+import Sidebar from './components/SideBar';
+import Accounts from './components/SidebarItems/Accounts';
+import CreditCards from './components/SidebarItems/CreditCards';
+import Dashboard from './components/SidebarItems/Dashboard';
+import Investments from './components/SidebarItems/Investments';
+import Loans from './components/SidebarItems/Loans';
+import MyPrivileges from './components/SidebarItems/MyPrivileges';
+import Services from './components/SidebarItems/Services';
+import Setting from './components/SidebarItems/Setting';
+import Transactions from './components/SidebarItems/Transactions';
 import Transfer from './components/Transfer';
+import WeeklyActivity from './components/WeeklyActivity';
+
 import {
   Carousel,
   CarouselContent,
@@ -24,9 +36,9 @@ function App() {
   return (
     <>
       <div>
-        <div>
-          <SideBar />
-        </div>
+        <WeeklyActivity />
+      </div>
+      <div>
         <div className="flex">
           <Card
             balance="&#36;5,757"
@@ -76,6 +88,26 @@ function App() {
               Send
               <img className="w-6 h-6" src="sender.png" alt="" />
             </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="flex">
+          <Sidebar />
+
+          <div className="flex-1 p-6">
+            <Routes>
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/transactions" element={<Transactions />} />
+              <Route path="/accounts" element={<Accounts />} />
+              <Route path="/investments" element={<Investments />} />
+              <Route path="/cards" element={<CreditCards />} />
+              <Route path="/loans" element={<Loans />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/privileges" element={<MyPrivileges />} />
+              <Route path="/setting" element={<Setting />} />
+              <Route path="*" element={<Dashboard />} />
+            </Routes>
           </div>
         </div>
       </div>
