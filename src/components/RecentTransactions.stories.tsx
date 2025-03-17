@@ -20,7 +20,7 @@ const Template: StoryFn<RecentTransactionsProps> = (args) => <RecentTransactions
 
 export const PositiveTransaction = Template.bind({});
 PositiveTransaction.args = {
-  date: '2025-03-17',
+  date: '02 january 2023',
   transaction: true,
   message: 'Payment Received',
   amount: 100,
@@ -29,7 +29,7 @@ PositiveTransaction.args = {
 
 export const NegativeTransaction = Template.bind({});
 NegativeTransaction.args = {
-  date: '2025-03-16',
+  date: '26 january 2023',
   transaction: false,
   message: 'Purchase at Store',
   amount: 50,
