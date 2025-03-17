@@ -33,5 +33,5 @@ NegativeTransaction.args = {
   transaction: false,
   message: 'Purchase at Store',
   amount: 50,
-  image: 'https://avatar.iran.liara.run/public?3'
+  image: 'https://avatar.iran.liara.run/public?6'
 };
