@@ -14,6 +14,7 @@ import Transactions from './components/SidebarItems/Transactions';
 import Transfer from './components/Transfer';
 import WeeklyActivity from './components/WeeklyActivity';
 
+import BalanceHistory from './components/BalanceHistory';
 import {
   Carousel,
   CarouselContent,
@@ -110,6 +111,9 @@ function App() {
             </Routes>
           </div>
         </div>
+      </div>
+      <div className="h-screen">
+        <BalanceHistory />
       </div>
     </>
   );
