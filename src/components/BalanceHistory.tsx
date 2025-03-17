@@ -43,8 +43,8 @@ const data = [
 
 const BalanceHistory = () => {
   return (
-    <div className="h-full w-full">
-      <ResponsiveContainer width="100%" height="40%">
+    <div>
+      <ResponsiveContainer width={800} height={300}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3" horizontal={true} vertical={true} />
           <YAxis ticks={[0, 200, 400, 600, 800]} />
