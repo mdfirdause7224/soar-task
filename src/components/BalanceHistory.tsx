@@ -43,24 +43,26 @@ const data = [
 
 const BalanceHistory = () => {
   return (
-    <div>
-      <ResponsiveContainer width={800} height={300}>
-        <LineChart data={data}>
-          <CartesianGrid strokeDasharray="3" horizontal={true} vertical={true} />
-          <YAxis ticks={[0, 200, 400, 600, 800]} />
-          <XAxis dataKey="name" />
-          <Tooltip contentStyle={{ borderRadius: '8px' }} />
-          <Line
-            type="monotone"
-            dataKey="value"
-            stroke="#8884d8"
-            strokeWidth={2}
-            dot={false}
-            activeDot={{ r: 4, fill: '#8884d8', strokeWidth: 2 }}
-          />
-        </LineChart>
-      </ResponsiveContainer>
-    </div>
+    <>
+      <div>
+        <ResponsiveContainer width={800} height={300}>
+          <LineChart data={data}>
+            <CartesianGrid strokeDasharray="3" horizontal={true} vertical={true} />
+            <YAxis ticks={[0, 200, 400, 600, 800]} />
+            <XAxis dataKey="name" />
+            <Tooltip contentStyle={{ borderRadius: '8px' }} />
+            <Line
+              type="monotone"
+              dataKey="value"
+              stroke="#8884d8"
+              strokeWidth={2}
+              dot={false}
+              activeDot={{ r: 4, fill: '#8884d8', strokeWidth: 2 }}
+            />
+          </LineChart>
+        </ResponsiveContainer>
+      </div>
+    </>
   );
 };
 

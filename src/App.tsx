@@ -112,7 +112,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="h-screen">
+      <div>
         <BalanceHistory />
       </div>
     </>
