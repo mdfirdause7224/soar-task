@@ -14,7 +14,9 @@ function Header(props: propTypes) {
         />
         <div id="setting" className="border-black border rounded-full w-8 h-8"></div>
         <div id="notification" className="border-black border rounded-full w-8 h-8"></div>
-        <div id="pic" className="border-black border rounded-full w-10 h-10"></div>
+        <div id="pic" className="border-black border rounded-full w-10 h-10">
+          <img src="https://avatar.iran.liara.run/public?" alt="" />
+        </div>
       </div>
     </div>
   );
