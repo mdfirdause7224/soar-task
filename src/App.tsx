@@ -49,22 +49,24 @@ function App() {
       <div>
         <Header pageTitle="Overview" />
       </div>
-      <div className="flex gap-10">
-        <WeeklyActivity />
-        <div>
-          <RecentTransactions
-            date={'28 january 2022'}
-            message={'Deposit from Card'}
-            amount={3463}
-          />
-          <RecentTransactions
-            transaction
-            image="https://avatar.iran.liara.run/public?5"
-            date={'29 january 2022'}
-            message={'Credited from Card'}
-            amount={3234}
-          />
-          <ExpenseStatistics data={data} />
+      <div>
+        <div className="flex">
+          <Sidebar />
+
+          <div className="flex-1 p-6">
+            <Routes>
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/transactions" element={<Transactions />} />
+              <Route path="/accounts" element={<Accounts />} />
+              <Route path="/investments" element={<Investments />} />
+              <Route path="/cards" element={<CreditCards />} />
+              <Route path="/loans" element={<Loans />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/privileges" element={<MyPrivileges />} />
+              <Route path="/setting" element={<Setting />} />
+              <Route path="*" element={<Setting />} />
+            </Routes>
+          </div>
         </div>
       </div>
       <div>
@@ -90,6 +92,24 @@ function App() {
             cardNumber={'3253 **** **** 5365'}
             variant="dark"
           />
+        </div>
+      </div>
+      <div className="flex gap-10">
+        <WeeklyActivity />
+        <div>
+          <RecentTransactions
+            date={'28 january 2022'}
+            message={'Deposit from Card'}
+            amount={3463}
+          />
+          <RecentTransactions
+            transaction
+            image="https://avatar.iran.liara.run/public?5"
+            date={'29 january 2022'}
+            message={'Credited from Card'}
+            amount={3234}
+          />
+          <ExpenseStatistics data={data} />
         </div>
       </div>
       <div className="flex mb-10">
@@ -123,26 +143,6 @@ function App() {
         </div>
         <div>
           <BalanceHistory />
-        </div>
-      </div>
-      <div>
-        <div className="flex">
-          <Sidebar />
-
-          <div className="flex-1 p-6">
-            <Routes>
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/transactions" element={<Transactions />} />
-              <Route path="/accounts" element={<Accounts />} />
-              <Route path="/investments" element={<Investments />} />
-              <Route path="/cards" element={<CreditCards />} />
-              <Route path="/loans" element={<Loans />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/privileges" element={<MyPrivileges />} />
-              <Route path="/setting" element={<Setting />} />
-              <Route path="*" element={<Setting />} />
-            </Routes>
-          </div>
         </div>
       </div>
     </>
