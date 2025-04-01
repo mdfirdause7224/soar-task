@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import BalanceHistory from './components/BalanceHistory';
 import Card from './components/Card';
+import ExpenseStatistics from './components/ExpenseStatistics';
 import RecentTransactions from './components/RecentTransactions';
 import Sidebar from './components/SideBar';
 import Accounts from './components/SidebarItems/Accounts';
@@ -51,6 +52,9 @@ function App() {
             message={'Credited from Card'}
             amount={3234}
           />
+        </div>
+        <div>
+          <ExpenseStatistics />
         </div>
       </div>
       <div>
