@@ -126,7 +126,7 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/privileges" element={<MyPrivileges />} />
               <Route path="/setting" element={<Setting />} />
-              <Route path="*" element={<Dashboard />} />
+              <Route path="*" element={<Setting />} />
             </Routes>
           </div>
         </div>
