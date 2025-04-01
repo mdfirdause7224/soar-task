@@ -3,6 +3,7 @@ import './App.css';
 import BalanceHistory from './components/BalanceHistory';
 import Card from './components/Card';
 import ExpenseStatistics from './components/ExpenseStatistics';
+import Header from './components/Header';
 import RecentTransactions from './components/RecentTransactions';
 import Sidebar from './components/SideBar';
 import Accounts from './components/SidebarItems/Accounts';
@@ -34,9 +35,20 @@ const users = [
   { title: 'Director', name: 'Yasir', img: 'https://avatar.iran.liara.run/public?6' }
 ];
 
+const data = [
+  { name: 'Groceries', value: 450 },
+  { name: 'Utilities', value: 120 },
+  { name: 'Leisure', value: 200 },
+  { name: 'Transport', value: 180 },
+  { name: 'Healthcare', value: 250 }
+];
+
 function App() {
   return (
     <>
+      <div>
+        <Header pageTitle="Overview" />
+      </div>
       <div className="flex gap-10">
         <WeeklyActivity />
         <div>
@@ -52,9 +64,7 @@ function App() {
             message={'Credited from Card'}
             amount={3234}
           />
-        </div>
-        <div>
-          <ExpenseStatistics />
+          <ExpenseStatistics data={data} />
         </div>
       </div>
       <div>

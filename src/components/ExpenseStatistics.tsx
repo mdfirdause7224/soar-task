@@ -6,12 +6,9 @@ interface DataItem {
   value: number;
 }
 
-const data: DataItem[] = [
-  { name: 'Entertainment', value: 300 },
-  { name: 'Bill Expense', value: 150 },
-  { name: 'Investment', value: 200 },
-  { name: 'Others', value: 350 }
-];
+interface ExpenseStatisticsProps {
+  data: DataItem[]; // Accepting data as a prop
+}
 
 const COLORS: string[] = ['#FC7900', '#343C6A', '#396AFF', '#232323'];
 
@@ -25,8 +22,10 @@ interface LabelProps {
   outerRadius: number;
   percent: number;
   index: number;
+  data: DataItem[]; // Pass data to the LabelProps interface
 }
 
+// Pass data as a prop to the label rendering function
 const renderCustomizedLabel = ({
   cx,
   cy,
@@ -34,7 +33,8 @@ const renderCustomizedLabel = ({
   innerRadius,
   outerRadius,
   percent,
-  index
+  index,
+  data // receive data here
 }: LabelProps) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 0.7;
   const x = cx + radius * Math.cos(-midAngle * RADIAN);
@@ -57,7 +57,7 @@ const renderCustomizedLabel = ({
   );
 };
 
-const ExpenseStatistics: React.FC = () => {
+const ExpenseStatistics: React.FC<ExpenseStatisticsProps> = ({ data }) => {
   return (
     <ResponsiveContainer width="100%" height={500}>
       <PieChart>
@@ -66,7 +66,7 @@ const ExpenseStatistics: React.FC = () => {
           cx="50%"
           cy="50%"
           labelLine={false}
-          label={renderCustomizedLabel}
+          label={(props) => renderCustomizedLabel({ ...props, data })} // Pass data to the label function
           outerRadius={120}
           fill="#8884d8"
           dataKey="value"
