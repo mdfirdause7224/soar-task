@@ -108,7 +108,7 @@ function App() {
             <div>
               <ExpenseStatistics data={data} />
             </div>
-            <div className="flex mb-10 ml-8">
+            <div className="flex mb-10 ml">
               <div className="bg-white/85 p-4 border-2 border-solid rounded-3xl w-[600px]">
                 <div className="ml-10 mr-10">
                   <Carousel>
