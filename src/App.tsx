@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import BalanceHistory from './components/BalanceHistory';
 import Card from './components/Card';
@@ -5,6 +6,15 @@ import ExpenseStatistics from './components/ExpenseStatistics';
 import Header from './components/Header';
 import RecentTransactions from './components/RecentTransactions';
 import Sidebar from './components/SideBar';
+import Accounts from './components/SidebarItems/Accounts';
+import CreditCards from './components/SidebarItems/CreditCards';
+import Dashboard from './components/SidebarItems/Dashboard';
+import Investments from './components/SidebarItems/Investments';
+import Loans from './components/SidebarItems/Loans';
+import MyPrivileges from './components/SidebarItems/MyPrivileges';
+import Services from './components/SidebarItems/Services';
+import Setting from './components/SidebarItems/Setting';
+import Transactions from './components/SidebarItems/Transactions';
 import Transfer from './components/Transfer';
 import {
   Carousel,
@@ -40,7 +50,7 @@ function App() {
         <div className="flex">
           <Sidebar />
 
-          {/* <div className="flex-1 p-6">
+          <div className="flex-1 p-6">
             <Routes>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/transactions" element={<Transactions />} />
@@ -53,7 +63,7 @@ function App() {
               <Route path="/setting" element={<Setting />} />
               <Route path="*" element={<Setting />} />
             </Routes>
-          </div> */}
+          </div>
         </div>
         <div className="flex-row">
           <div className="w-full">
