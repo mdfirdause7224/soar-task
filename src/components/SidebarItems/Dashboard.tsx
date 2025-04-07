@@ -32,7 +32,7 @@ const data = [
 ];
 function Dashboard() {
   return (
-    <div>
+    <div className="">
       <div className="flex-row">
         <div className="w-full">
           <Header pageTitle="Overview" />
