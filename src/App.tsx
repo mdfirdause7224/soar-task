@@ -60,8 +60,7 @@ function App() {
               <Route path="/loans" element={<Loans />} />
               <Route path="/services" element={<Services />} />
               <Route path="/privileges" element={<MyPrivileges />} />
-              <Route path="/setting" element={<Setting />} />
-              <Route path="*" element={<Setting />} />
+              <Route path="/settings" element={<Setting />} />
             </Routes>
           </div>
         </div>
