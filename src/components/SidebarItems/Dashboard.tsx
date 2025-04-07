@@ -78,13 +78,13 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="flex">
+          <div className="">
             <div>
               <WeeklyActivity />
             </div>
-          </div>
-          <div>
-            <ExpenseStatistics data={data} />
+            <div>
+              <ExpenseStatistics data={data} />
+            </div>
           </div>
           <div className="flex mb-10 ml">
             <div className="bg-white/85 p-4 border-2 border-solid rounded-3xl w-[600px]">

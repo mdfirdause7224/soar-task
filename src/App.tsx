@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+// import './App.css';
 import Sidebar from './components/SideBar';
 import Accounts from './components/SidebarItems/Accounts';
 import CreditCards from './components/SidebarItems/CreditCards';
