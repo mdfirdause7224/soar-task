@@ -38,10 +38,10 @@ function Dashboard() {
           <Header pageTitle="Overview" />
         </div>
         <div>
-          <div className="flex gap-4">
+          <div className="flex gap-6 pr-7">
             <div className="bg-slate-200">
               <h2 className="text-left pt-6 pl-6 font-semibold text-3xl">My Cards</h2>
-              <div className="overflow-x-auto w-[850px] scrollbar-hide">
+              <div className="overflow-x-auto w-[820px] scrollbar-hide">
                 <div className="flex gap-4 min-w-max p-2">
                   <Card
                     balance="&#36;5,757"
@@ -107,16 +107,16 @@ function Dashboard() {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-4 pl-6 pr-6">
+          <div className="flex flex-wrap gap-5 pl-6 pr-6">
             <div>
               <h2 className="text-left pt-6 pl-6 font-semibold text-3xl">Weekly Activity</h2>
-              <div className="w-full md:w-[600px] border-0 bg-slate-200 rounded-3xl pt-6 pr-6 pb-6 mt-4">
+              <div className="w-full md:w-[810px] border-0 bg-slate-200 rounded-3xl pt-6 pr-6 pb-6 mt-4">
                 <WeeklyActivity />
               </div>
             </div>
             <div className=" md:flex-1">
               <h2 className="text-left pt-6 pl-6 font-semibold text-3xl">Expense Statistics</h2>
-              <div className="h-[350px] mt-4 border-0 bg-slate-300 rounded-3xl pt-12">
+              <div className="h-[350px] w-[400px] mt-4 border-0 bg-slate-300 rounded-3xl pt-12">
                 <ExpenseStatistics data={data} />
               </div>
             </div>

@@ -50,7 +50,7 @@ const data = [
 
 export default function WeeklyActivity() {
   return (
-    <ResponsiveContainer width={600} height={300}>
+    <ResponsiveContainer width={800} height={300}>
       <BarChart
         data={data}
         margin={{
