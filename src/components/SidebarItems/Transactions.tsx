@@ -3,7 +3,7 @@ import Header from '../Header';
 function Transactions() {
   return (
     <div>
-      <div className="w-[1180px]">
+      <div className="w-[1295px]">
         <Header pageTitle="Transactions" />
       </div>
       <div className="flex justify-center p-6">

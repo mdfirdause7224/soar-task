@@ -3,7 +3,7 @@ import Header from '../Header';
 function MyPrivileges() {
   return (
     <div>
-      <div className="w-[1180px]">
+      <div className="w-[1295px]">
         <Header pageTitle="My Privileges" />
       </div>
       <div className="flex justify-center p-6">
