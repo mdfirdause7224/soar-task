@@ -1,5 +1,13 @@
+import Header from '../Header';
+
 function Transactions() {
-  return <h1> You are in Transactions Page</h1>;
+  return (
+    <div>
+      <div className="w-[1180px]">
+        <Header pageTitle="Transactions" />
+      </div>
+    </div>
+  );
 }
 
 export default Transactions;

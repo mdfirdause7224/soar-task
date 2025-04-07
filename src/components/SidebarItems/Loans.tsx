@@ -1,5 +1,13 @@
+import Header from '../Header';
+
 function Loans() {
-  return <h1> You are in Loans Page</h1>;
+  return (
+    <div>
+      <div className="w-[1180px]">
+        <Header pageTitle="Loans" />
+      </div>
+    </div>
+  );
 }
 
 export default Loans;

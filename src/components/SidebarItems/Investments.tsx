@@ -1,5 +1,13 @@
+import Header from '../Header';
+
 function Investments() {
-  return <h1> You are in Investments Page</h1>;
+  return (
+    <div>
+      <div className="w-[1180px]">
+        <Header pageTitle="Investments" />
+      </div>
+    </div>
+  );
 }
 
 export default Investments;

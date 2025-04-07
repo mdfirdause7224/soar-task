@@ -1,5 +1,13 @@
+import Header from '../Header';
+
 function Services() {
-  return <h1> You are in Services Page</h1>;
+  return (
+    <div>
+      <div className="w-[1180px]">
+        <Header pageTitle="Services" />
+      </div>
+    </div>
+  );
 }
 
 export default Services;

@@ -1,5 +1,13 @@
+import Header from '../Header';
+
 function CreditCards() {
-  return <h1> You are in Credit Card Page</h1>;
+  return (
+    <div>
+      <div className="w-[1180px]">
+        <Header pageTitle="Credit Cards" />
+      </div>
+    </div>
+  );
 }
 
 export default CreditCards;

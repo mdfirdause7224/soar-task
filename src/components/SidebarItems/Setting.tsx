@@ -1,5 +1,13 @@
+import Header from '../Header';
+
 function Setting() {
-  return <h1> You are in Settings Page</h1>;
+  return (
+    <div>
+      <div className="w-[1180px]">
+        <Header pageTitle="Settings" />
+      </div>
+    </div>
+  );
 }
 
 export default Setting;
