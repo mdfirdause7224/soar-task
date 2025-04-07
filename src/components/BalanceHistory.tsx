@@ -45,7 +45,7 @@ const BalanceHistory = () => {
   return (
     <>
       <div>
-        <ResponsiveContainer width={800} height={300}>
+        <ResponsiveContainer width={580} height={300}>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3" horizontal={true} vertical={true} />
             <YAxis ticks={[0, 200, 400, 600, 800]} />

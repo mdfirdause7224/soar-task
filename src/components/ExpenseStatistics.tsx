@@ -59,7 +59,7 @@ const renderCustomizedLabel = ({
 
 const ExpenseStatistics: React.FC<ExpenseStatisticsProps> = ({ data }) => {
   return (
-    <ResponsiveContainer width="25%" height={250}>
+    <ResponsiveContainer width="100%" height={250}>
       <PieChart>
         <Pie
           data={data}
